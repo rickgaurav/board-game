@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Board Game</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body>
+	<div class="container" id="app-container">
+		<h1>Board Game</h1>
+        <h3>Instructions</h3>
+        <div>
+            Clicking the highlighted box adds to the score while clicking outside
+            the highlighted box decreases the score. Not clicking anywhere keeps the score same.
+        </div>
+        <div class="game-container" id="game-container">
+            <div class="game-row">
+                <div class="game-col text-center" id="cell-1" data-content="1"> 1 </div>
+                <div class="game-col text-center" id="cell-2" data-content="2"> 2 </div>
+                <div class="game-col text-center" id="cell-3" data-content="3"> 3 </div>
+            </div>
+            <div class="game-row">
+                <div class="game-col text-center" id="cell-4" data-content="4"> 4 </div>
+                <div class="game-col text-center" id="cell-5" data-content="5"> 5 </div>
+                <div class="game-col text-center" id="cell-6" data-content="6"> 6 </div>
+            </div>
+            <div class="game-row">
+                <div class="game-col text-center" id="cell-7" data-content="7"> 7 </div>
+                <div class="game-col text-center" id="cell-8" data-content="8"> 8 </div>
+                <div class="game-col text-center" id="cell-9" data-content="9"> 9 </div>
+            </div>
+        </div>
+        <div class="start-game-container">
+            <button class="btn btn-default start-game" type="button"> Start Game</button>
+            <button class="btn btn-default stop-game" type="button"> Stop Game</button>
+        </div>
+        <div>
+            <span>Total Score:</span>
+            <span class="score-container">0</span>
+        </div>
+	</div>
+	<script type="text/javascript" src="./bundle.js"></script>
+</body>
+</html>

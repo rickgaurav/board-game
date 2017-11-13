@@ -1,0 +1,6 @@
+/build/app.css
+/build/bundle.js
+/build/bundle.js.map
+/node_modules
+package-lock.json
+.idea/
